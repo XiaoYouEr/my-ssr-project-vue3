@@ -1,0 +1,133 @@
+@import "../../common.less";
+
+input::-webkit-input-placeholder, input::-moz-placeholder, input::-ms-input-placeholder, input::placeholder{
+  font-weight: 400;
+  color: #959595;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar{
+    padding: 0 45px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+      .logo-wrap{
+        margin-right: 50px;
+        img{
+          width: 166px;
+          height: 30px;
+        }
+        .title{
+          margin-right: 30px;
+          font-size: 16px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 22px;
+          text-align: right;
+        }
+      }
+      .item{
+        margin-right: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        line-height: 25px;
+        padding-bottom: 6px;
+        &:hover{
+          color: @primaryColor;
+          border-bottom: 1px solid @primaryColor;
+          font-weight: 600;
+        }
+      }
+    }
+    .search{
+
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-bar{
+    background-color: #ffffff;
+    padding: 0 45px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      .logo-wrap{
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: flex-end;
+        img.logo{
+          width: 166px;
+          height: 30px;
+        }
+        .title{
+          font-size: 16px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 22px;
+          text-align: right;
+        }
+      }
+      .item{
+        margin-right: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        line-height: 25px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        transition: border-color ease-in .3s;
+        cursor: pointer;
+        &:hover{
+          color: @primaryColor;
+          border-bottom: 2px solid @primaryColor;
+          font-weight: 600;
+          
+        }
+      }
+    }
+    .search-wrap{
+      width: 24%;
+      max-width: 300px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      position: relative;
+      
+      .search-input{
+        flex: 1;
+        height: 100%;
+        background: #F2F2F2;
+        border-radius: 21px;
+        border: 0;
+        padding-left: 46px;
+        outline: none;
+        font-size: 16px;
+        padding-right: 10px;
+      }
+      &::before{
+        content: ' ';
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        width: 17px;
+        height: 18px;
+        background-image: url("../../images/search.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

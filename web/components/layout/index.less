@@ -1,4 +1,4 @@
-@import '../../common.less';
+@import "../../common.less";
 
 * {
   margin: 0;
@@ -14,10 +14,25 @@ ul {
   list-style: none;
 }
 
-
 .loading {
   width: 30px;
   height: 30px;
-  .verticalLevelCenter
+  .verticalLevelCenter;
 }
 
+html, body{
+  background-color: #FAFAFA;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+  .container{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .content{
+    padding: 0 45px;
+  }
+}
