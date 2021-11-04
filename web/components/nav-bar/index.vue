@@ -3,7 +3,7 @@
   <div class="nav-bar">
     <div class="left">
       <div class="logo-wrap">
-        <img class="logo" :src="require('@/images/logo.png')" alt="logo" />
+        <img class="logo" :src="logo" />
         <div class="title">投资慧眼</div>
       </div>
       <div class="item">热门</div>
@@ -21,11 +21,13 @@
 </template>
 
 <script lang="ts">
+import Logo from "@/images/logo.png";
 export default {
   props: ["data"],
   data() {
     return {
       searchValue: "",
+      logo: Logo,
     };
   },
   methods: {},
