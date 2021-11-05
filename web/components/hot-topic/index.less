@@ -1,0 +1,72 @@
+@media screen and (max-width: 768px) {
+  
+}
+@media screen and (min-width: 769px) {
+  .hot-topic{
+    width: 100%;
+    min-height: 314px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    .header{
+      height: 64px;
+      border-bottom: 1px solid #E5E5E5 ;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      .title{
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        line-height: 25px;
+      }
+      .switch{
+        cursor: pointer;
+        padding-right: 18px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #959595;
+        height: 17px;
+        line-height: 17px;
+        background-image: url("../../images/refresh.png");
+        background-repeat: no-repeat;
+        background-position: right 3px;
+        background-size: 12px 12px;
+        &:hover{
+          background-image: url("../../images/refresh-active.png");
+          background-size: 12px 10px;
+          color: #77A0E3;
+          background-position: right 4px;
+        }
+      }
+    }
+    .topic-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 22px 21px;
+      .item{
+        height: 26px;
+        line-height: 26px;
+        background: #F2F2F2;
+        border-radius: 13px;
+        padding: 0 6px;
+        cursor: pointer;
+        flex: auto;
+        text-align: center;
+        margin: 5px 6px;
+        font-weight: 400;
+        color: #4B4B4B;
+        font-size: 14px;
+        &:hover {
+          color: #0059E5;
+          background: #EBF3FF;
+        }
+        &:not(:first-child) {
+          // margin-left: 12px;
+        }
+      }
+    }
+  }
+}
